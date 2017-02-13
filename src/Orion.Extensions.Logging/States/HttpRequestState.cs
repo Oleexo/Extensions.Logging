@@ -7,7 +7,6 @@ namespace Orion.Extensions.Logging.States {
         public TimeSpan ResponseTime { get; internal set; }
         public string ResponseCode { get; internal set; }
         public string RequestUrl { get; internal set; }
-        public string OperationSystem { get; internal set; }
         public string HttpMethod { get; internal set; }
         public bool Success { get; internal set; }
 

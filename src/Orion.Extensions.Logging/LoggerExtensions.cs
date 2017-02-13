@@ -12,15 +12,13 @@ namespace Orion.Extensions.Logging {
             DateTimeOffset startTime,
             TimeSpan duration,
             LogLevel logLevel = LogLevel.Information,
-            string responseCode = null,
-            string operationSystem = null) {
+            string responseCode = null) {
             var state = new HttpRequestState {
                 HttpMethod = httpMethod,
                 EventTime = startTime,
                 RequestUrl = url,
                 ResponseCode = responseCode,
                 ResponseTime = duration,
-                OperationSystem = operationSystem ?? RuntimeInformation.OSDescription,
                 Success = true
             };
             logger.Log(logLevel, 1, state, null, HttpRequestState.Formatter);
@@ -32,14 +30,12 @@ namespace Orion.Extensions.Logging {
             DateTimeOffset startTime,
             TimeSpan duration,
             Exception exception,
-            LogLevel logLevel = LogLevel.Error,
-            string operationSystem = null) {
+            LogLevel logLevel = LogLevel.Error) {
             var state = new HttpRequestState {
                 HttpMethod = httpMethod,
                 EventTime = startTime,
                 RequestUrl = url,
                 ResponseTime = duration,
-                OperationSystem = operationSystem ?? RuntimeInformation.OSDescription,
                 Success = exception == null
             };
             logger.Log(logLevel, 1, state, exception, HttpRequestState.Formatter);
