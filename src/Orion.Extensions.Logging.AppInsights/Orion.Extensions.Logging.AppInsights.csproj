@@ -3,16 +3,18 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.5;net46</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0-alpha5</Version>
-    <AssemblyVersion>1.0.0.5</AssemblyVersion>
-    <FileVersion>1.0.0.5</FileVersion>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <Version>1.0.1-alpha1</Version>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
     <Description>Use Application Insights for gathering data generate by Microsoft.Extensions.Logging</Description>
-    <Company />
+    <Company>maxfoow</Company>
     <Product />
     <PackageLicenseUrl>https://raw.githubusercontent.com/maxfoow/Extensions.Logging/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/maxfoow/Extensions.Logging</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/maxfoow/Extensions.Logging.git</RepositoryUrl>
+    <Authors>maxfoow</Authors>
   </PropertyGroup>
 
   <ItemGroup>
