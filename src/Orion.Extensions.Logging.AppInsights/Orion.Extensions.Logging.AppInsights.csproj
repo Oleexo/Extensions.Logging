@@ -4,9 +4,9 @@
     <TargetFrameworks>netstandard1.5;net46</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-    <Version>1.0.1-alpha1</Version>
-    <AssemblyVersion>1.0.1.1</AssemblyVersion>
-    <FileVersion>1.0.1.1</FileVersion>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <Description>Use Application Insights for gathering data generate by Microsoft.Extensions.Logging</Description>
     <Company>maxfoow</Company>
     <Product />
